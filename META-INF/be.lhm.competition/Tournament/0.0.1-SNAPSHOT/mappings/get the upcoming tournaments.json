@@ -1,0 +1,27 @@
+{
+  "id" : "203952e6-3069-4842-8778-d4afb38ac889",
+  "request" : {
+    "urlPath" : "/api/v1/tournaments",
+    "method" : "GET",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      },
+      "Authorization" : {
+        "matches" : "[\\S\\s]+"
+      }
+    },
+    "queryParameters" : {
+      "limit" : {
+        "equalTo" : "2"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[{\"name\":\"Golden Dragon Cup 2019\",\"date\":\"2014-08-09\"},{\"name\":\"Tigers Cup: Invitational\",\"date\":\"2019-04-04\"}]",
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "203952e6-3069-4842-8778-d4afb38ac889",
+  "priority" : 1
+}
